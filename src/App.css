@@ -45,6 +45,7 @@ body {
 
 nav {
     display: flex;
+    align-items: center; /* Center items vertically */
     justify-content: space-around;
     padding: 1em;
     transition: background-color 0.3s, color 0.3s;
@@ -95,4 +96,33 @@ button {
 
 button:hover {
     opacity: 0.8; /* Slightly dim on hover */
+}
+
+
+input[type="text"] {
+    padding: 0.5em; /* Spacing inside the input */
+    border-radius: 4px; /* Rounded corners */
+    border: 1px solid #ccc; /* Border color */
+    margin-left: 1em; /* Space between links and input */
+    transition: border-color 0.3s; /* Smooth border color change */
+}
+
+input[type="text"]:focus {
+    border-color: #007bff; /* Border color when focused */
+    outline: none; /* Remove default outline */
+}
+/* Light theme styles */
+.light input[type="text"] {
+    background-color: #ffffff; /* White background */
+    color: #000000; /* Black text */
+}
+
+/* Dark theme styles */
+.dark input[type="text"] {
+    background-color: #333333; /* Dark background */
+    color: #ffffff; /* White text */
+}
+
+.dark input[type="text"]:focus {
+    border-color: #007bff; /* Highlight color for dark theme */
 }

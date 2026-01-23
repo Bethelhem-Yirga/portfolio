@@ -36,3 +36,63 @@
     transform: rotate(360deg);
   }
 }
+
+/* Base styles for both themes */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a {
+    color: inherit;  /* Adjusts to parent color */
+}
+
+/* Light theme styles */
+.light {
+    background-color: #ffffff; /* White background */
+    color: #000000; /* Black text */
+}
+
+.light nav {
+    background-color: #f8f9fa; /* Light grey nav background */
+}
+
+/* Dark theme styles */
+.dark {
+    background-color: #181818; /* Dark background */
+    color: #ffffff; /* White text */
+}
+
+.dark nav {
+    background-color: #282c34; /* Dark nav background */
+}
+
+/* Button styles */
+button {
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.light button {
+    background-color: #007bff; /* Bootstrap blue */
+    color: #ffffff;
+}
+
+.dark button {
+    background-color: #4a4a4a; /* Dark button color */
+    color: #ffffff;
+}
+
+button:hover {
+    opacity: 0.8; /* Slightly dim on hover */
+}

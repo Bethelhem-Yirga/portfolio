@@ -5,6 +5,7 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import './App.css'; // Ensure you are using your CSS for theming
 
 const App = () => {
     const [theme, setTheme] = useState('light');

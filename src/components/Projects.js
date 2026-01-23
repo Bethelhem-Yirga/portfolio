@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 
 const Projects = () => {
-    // Sample projects data
     const [projects] = useState([
         { id: 1, name: 'Project 1', description: 'Description of Project 1' },
         { id: 2, name: 'Project 2', description: 'Description of Project 2' },
@@ -10,13 +9,18 @@ const Projects = () => {
 
     const [selectedProject, setSelectedProject] = useState(null);
 
+    const handleProjectClick = (project) => {
+        setSelectedProject(project);
+        console.log(`Project clicked: ${project.name}`);
+    };
+
     return (
         <div>
             <h2>Projects</h2>
             <ul>
                 {projects.map(project => (
                     <li key={project.id}>
-                        <button onClick={() => setSelectedProject(project)}>
+                        <button onClick={() => handleProjectClick(project)}>
                             {project.name}
                         </button>
                     </li>

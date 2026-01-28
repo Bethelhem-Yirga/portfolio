@@ -1,6 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+
+const Nav = styled.nav`
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1em;
+`;
 
 const SearchInput = styled.input`
     padding: 0.5em;
@@ -17,8 +24,14 @@ const SearchInput = styled.input`
 `;
 
 const Navbar = ({ theme, toggleTheme, setSearchTerm }) => {
+    const [isLoggedIn, setIsLoggedIn] = useState(false); // Example state
+
     const handleInputChange = (e) => {
         setSearchTerm(e.target.value);
+    };
+
+    const handleLoginToggle = () => {
+        setIsLoggedIn((prev) => !prev); // Toggle login state
     };
 
     return (
@@ -51,6 +64,12 @@ const Navbar = ({ theme, toggleTheme, setSearchTerm }) => {
             <button onClick={toggleTheme}>
                 Switch to {theme === 'light' ? 'Dark' : 'Light'} Mode
             </button>
+
+             {isLoggedIn ? (
+                <button onClick={handleLoginToggle}>Logout</button>
+            ) : (
+                <button onClick={handleLoginToggle}>Login</button>
+            )}
         </nav>
     );
 };

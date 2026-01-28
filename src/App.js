@@ -6,6 +6,8 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
+import './styles.css'; // Import your CSS file
+
 
 const App = () => {
     const [theme, setTheme] = useState('light');

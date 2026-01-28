@@ -1,0 +1,31 @@
+/* Navbar.module.css */
+.nav {
+    background-color: #007bff;
+    color: white;
+    padding: 1em;
+}
+
+nav a {
+    color: #000000;
+    text-decoration: none;
+    margin: 0 1em;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+    margin: 0 1em;
+}
+
+.button {
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #28a745;
+    color: white;
+}
+
+.button:hover {
+    background-color: #218838;
+}

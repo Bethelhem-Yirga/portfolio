@@ -1,0 +1,48 @@
+/* styles.css */
+
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navbar Styles */
+nav {
+    background-color: #007bff;
+    color: #fff;
+    padding: 1em;
+}
+
+/* Links in Navbar */
+nav a {
+    color: #000000;
+    text-decoration: none;
+    margin: 0 1em;
+}
+
+/* Search Input Styles */
+input[type="text"] {
+    padding: 0.5em;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-left: 1em;
+    width: 150px; /* Adjust as needed */
+}
+
+/* Button Styles */
+button {
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
